@@ -177,7 +177,7 @@ gulp.task('templates', function(){
     }))
     .pipe(wrap('Handlebars.template(<%= contents %>)'))
     .pipe(declare({
-        namespace: 'PriceApp.templates',
+        namespace: 'PriceApp',
         noRedeclare: true
     }))
     .pipe(gulp.dest('.tmp/templates'));
